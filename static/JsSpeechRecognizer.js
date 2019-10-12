@@ -53,7 +53,7 @@ function JsSpeechRecognizer() {
     this.minPower = 0.01;
 
     // Keyword spotting parameters
-    this.keywordSpottingMinConfidence = 0.30;
+    this.keywordSpottingMinConfidence = 0.5;
     this.keywordSpottingBufferCount = 80;
     this.keywordSpottingLastVoiceActivity = 0;
     this.keywordSpottingMaxVoiceActivityGap = 300;
