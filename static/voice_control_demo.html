@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Control Demo</title>
+</head>
+<style>
+ p {
+    font-size: 5vw;
+  }
+  .italic {
+    font-style: italic;
+    }</style>
+<body>
+    <script src="js/pv_porcupine.js"></script>
+    <script src="js/porcupine.js"></script>
+    <script src="js/picovoiceAudioManager.js"></script>
+    <script src="js/voiceControlDemo.js"></script>
+	 <script src="js/RecordRTC.js"></script>
+	 <script src="js/testblob.js"></script>
+	 
+	
+	<!-- <div style="center">
+  <h5>
+    Welcome to ASPA!
+  </h5>
+ 
+</div> -->
+
+    <h1 align="center">
+       Welcome to ASPA!
+    </h1>
+
+    <div align="center">
+        <img src="NeutronConceptLogoBlue.gif" width="200em" id="light_bulb">
+    </div>
+       <div align="center">
+       <p class="italic" id="text" >
+</p>
+    </div>
+	<div id="audio-blobs-container" style="display: none;">
+	  <audio id="audio" src="js/aspa.wav" type="audio/wav"></audio>	
+    <h2 style="margin-bottom: 20px;">Audio Blobs Goes Here:</h2>
+</div>
+    <div style="padding: 5em 20em">
+        <p>
+           
+        </p>
+       
+        <p align="center">
+            <button onclick="VoiceControlDemo.start()" id="demo_button">
+                Start Demo
+            </button>
+        </p>
+    </div>
+</body>
+</html>
