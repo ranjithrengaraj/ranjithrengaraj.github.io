@@ -91,7 +91,8 @@
                     $("#testingStartStopRecordingButton").val("stop testing");
                     document.getElementById("startStopRecordingButton").disabled = true;
                     
-                    speechRec.startKeywordSpottingRecording();
+                   // speechRec.startKeywordSpottingRecording();
+                     speechRec.startKeywordSpottingNoisyRecording();
                 } else {
                     $("#testingStartStopRecordingButton").val("start testing");
                     document.getElementById("startStopRecordingButton").disabled = false;
