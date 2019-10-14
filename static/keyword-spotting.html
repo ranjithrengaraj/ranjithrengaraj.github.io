@@ -42,7 +42,7 @@
 
                     // Update the UI, and prevent the testing button from being pressed
                     $("#startStopRecordingButton").val("stop training");
-                    document.getElementById("testingStartStopRecordingButton").disabled = true;
+                  //  document.getElementById("testingStartStopRecordingButton").disabled = true;
                     
                     
                 } else {
@@ -89,7 +89,7 @@
                 if (!speechRec.isRecording()) {
                     // Update the UI and prevent the training button from being pressed
                     $("#testingStartStopRecordingButton").val("stop testing");
-                    document.getElementById("startStopRecordingButton").disabled = true;
+                  //  document.getElementById("startStopRecordingButton").disabled = true;
                     
                     speechRec.startKeywordSpottingRecording();
                    //  speechRec.startKeywordSpottingNoisyRecording();
@@ -161,7 +161,7 @@
         <textarea name='jsontext' id='jsontext'></textarea>
     </div> -->
 
-    <div class="container">
+  <!--  <div class="container">
         <div class="row" style="margin-top: 5%">
             <div class="one-half column">
                 <h2>Training</h2>
@@ -173,7 +173,7 @@
                 <div id="resultsDiv">
                 </div>
             </div> 
-
+-->
             <div class="one-half column">
                 <h2>Testing</h2>
                 <div>
