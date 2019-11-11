@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src='hark.bundle.js'></script>
+    <script src='test.js'></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Slience detection</title>
+  </head> 
+  <body>
+    <button id="listen" onclick="checkSlience()" class="button" >StartStream</button>
+    <div id="console"></div>
+    <div id="predictions" style="flex-direction: row">
+      <div id="speak" class="prediction">Speaking</div>
+      <div id="other" class="prediction">Slience</div>
+    </div>
+<!-- 
+    <audio id="yes">
+      <source src="yes.mp3" type="audio/mpeg">
+    </audio>
+     
+    <p>
+      Set "Okay, Atlas" activation threshold (0 - 1.0) : 
+      <input type="text" name="threshold" id="threshold" value="0.99999">
+      <button type="button" id="set" onclick="setThreshold()">Set threshold</button>
+    </p>-->
+  </body>
+</html>
