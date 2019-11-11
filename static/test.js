@@ -23,11 +23,11 @@ navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handl
     function handleSuccess(stream) {
         
       var speechEvents = hark(stream);
-      speechEvents.setInterval(70);
+      //speechEvents.setInterval(70);
     speechEvents.on('speaking', function() {
     //  notification.style.display = 'block';
       //log('speaking');
-      console.log("---###Speaking----");
+      console.log("---Speaking----");
       document.getElementById('other').classList.remove('green_background');
       document.getElementById('speak').classList.add('green_background');
     });
