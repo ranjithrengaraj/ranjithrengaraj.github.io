@@ -23,7 +23,7 @@ navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handl
     function handleSuccess(stream) {
         
       var speechEvents = hark(stream);
-      speechEvents.setInterval(100);
+      speechEvents.setInterval(70);
     speechEvents.on('speaking', function() {
     //  notification.style.display = 'block';
       //log('speaking');
