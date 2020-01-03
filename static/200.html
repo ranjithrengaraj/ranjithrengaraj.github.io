@@ -142,6 +142,11 @@
 
         // Set the keyword spotting callback
         speechRec.keywordSpottedCallback = updateKeywordSpotting;
+        
+        function mapsSelector() {
+  
+    window.open("http://maps.apple.com/?sll=50.894967,4.341626&z=10&t=s ");
+}
     </script>
 
 
@@ -153,6 +158,9 @@
 
         </div>
         <textarea name='jsontext' id='jsontext'></textarea>
+    </div>
+    <div>
+        <input class="button-primary" id="mapid" type="button" value="LauchMap" onclick="mapsSelector();" />
     </div>
 
    <div class="container">
